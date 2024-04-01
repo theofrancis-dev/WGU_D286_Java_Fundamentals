@@ -1,6 +1,6 @@
 # WGU D286 Java Fundamentals
 
-##13.1 LAB: Caffeine levels
+## 13.1 LAB: Caffeine levels
 	import java.util.Scanner; 
 
 	public class LabProgram {
@@ -248,34 +248,34 @@
 ## 19.4 1: LAB: Warm up: Contacts
 
 ### ContactList.java
-import java.util.Scanner;
+	import java.util.Scanner;
 
-public class ContactList {
+	public class ContactList {
       
       
    public static void main(String[] args) {  
       ContactNode heap = new ContactNode();
-      Scanner scnr = new Scanner(System.in);
-      /* Type your code here. */
-      ContactNode contact1 = new ContactNode (scnr.nextLine(), scnr.nextLine());
-      heap.insertAfter (contact1);
-      ContactNode contact2 = new ContactNode (scnr.nextLine(), scnr.nextLine());
-      contact1.insertAfter(contact2);
-      ContactNode contact3 =  new ContactNode (scnr.nextLine(), scnr.nextLine());
-      contact2.insertAfter(contact3);
-      
-      System.out.println ("Person 1: " + contact1.getName() + ", " + contact1.getPhoneNumber());
-      System.out.println ("Person 2: " + contact2.getName() + ", " + contact2.getPhoneNumber());
-      System.out.println ("Person 3: " + contact3.getName() + ", " + contact3.getPhoneNumber());
-      System.out.println("\nCONTACT LIST");
-      ContactNode node = heap.getNext();      
-      while (node!=null){
-         node.printContactNode();
-         System.out.println();
-         node = node.getNext();
-      }
-   }
-}
+	      Scanner scnr = new Scanner(System.in);
+	      /* Type your code here. */
+	      ContactNode contact1 = new ContactNode (scnr.nextLine(), scnr.nextLine());
+	      heap.insertAfter (contact1);
+	      ContactNode contact2 = new ContactNode (scnr.nextLine(), scnr.nextLine());
+	      contact1.insertAfter(contact2);
+	      ContactNode contact3 =  new ContactNode (scnr.nextLine(), scnr.nextLine());
+	      contact2.insertAfter(contact3);
+	      
+	      System.out.println ("Person 1: " + contact1.getName() + ", " + contact1.getPhoneNumber());
+	      System.out.println ("Person 2: " + contact2.getName() + ", " + contact2.getPhoneNumber());
+	      System.out.println ("Person 3: " + contact3.getName() + ", " + contact3.getPhoneNumber());
+	      System.out.println("\nCONTACT LIST");
+	      ContactNode node = heap.getNext();      
+	      while (node!=null){
+	         node.printContactNode();
+	         System.out.println();
+	         node = node.getNext();
+	      }
+	   }
+	}
 
 ###  ContactNode.java
 
